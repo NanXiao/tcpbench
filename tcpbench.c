@@ -45,6 +45,7 @@
 #include <err.h>
 #include <fcntl.h>
 #include <poll.h>
+#include <time.h>
 
 #include <nlist.h>
 
