@@ -3,7 +3,7 @@ CFLAGS ?=	-g -O2 -Wall
 LDFLAGS ?= -levent
 
 all:
-	${CC} ${CFLAGS} ${LDFLAGS} -o tcpbench tcpbench.c
+	${CC} ${CFLAGS} -o tcpbench tcpbench.c ${LDFLAGS}
 
 clean:
 	rm tcpbench
