@@ -1,9 +1,9 @@
 CC ?=		cc
 CFLAGS ?=	-g -O2 -Wall
-LDFLAGS ?= -levent
+LDLIBS ?= -levent
 
 all:
-	${CC} ${CFLAGS} -o tcpbench tcpbench.c ${LDFLAGS}
+	${CC} ${CFLAGS} -o tcpbench tcpbench.c ${LDLIBS}
 
 clean:
 	rm tcpbench
